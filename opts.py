@@ -1,0 +1,27 @@
+import argparse
+
+def get_opt():
+	parser = argparse.ArgumentParser(description='DependEX')
+	parser.add_argument('--checkpoint', type=str, help='load trained model')
+	parser.add_argument('--dir_name', type=str,default="/mnt/data/zhangsk/LearnData/", help='load trained model')
+	parser.add_argument('--train_file_name', type=str, default="train.txt", help='train file name')
+	parser.add_argument('--test_file_name', type=str, default="test.txt", help='test file name')
+	parser.add_argument('--dependency_model', type=str, default="transformer", help='which model to decode img')
+	parser.add_argument('--num_layers', type=int, default=2, help='the number of transformer encoder layers')
+	parser.add_argument('--embed_size', type=int , default=240, help='dimension of word embedding vectors')
+	parser.add_argument('--finetune_cnn', type=bool , default=True, help='whether to finetune ResNet')
+	parser.add_argument('--model_path', type=str, default="run/models", help='output directory to save models & results')
+	parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
+	parser.add_argument('--num_epochs', type=int, default=100, help='number of training epochs')
+	parser.add_argument('--batch_size', type=int, default=64, help='number of images per training batch')
+	parser.add_argument('--num_workers', type=int, default=1, help='pytorch data loader threads')
+	parser.add_argument('--center_weight', type=float, default=1.0, help="center weight")
+	parser.add_argument('--att_size', type=int , default=7, help='attention size for transfomer')
+	parser.add_argument('--use_bn', type=int, help="whether to use batch normalzation when embedding attention vector of img")
+	parser.add_argument('--drop_prob_lm', type=float, default=0.1, help="dropout rate for language model")
+	parser.add_argument('--class_num', type=int, default=3, help="class number")
+	parser.add_argument('--ff_size', type=int, default = 2048, help="feed forward size for transformer")
+	parser.add_argument('--img_fatures_size', type=int, default=2048,help='embedding size for img')
+	parser.set_defaults(attention=True)
+	args = parser.parse_args()
+	return args
