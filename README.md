@@ -4,7 +4,7 @@ Dependency-aware Form Understanding
 ![Dependency-aware Form Understanding](https://github.com/skzhangPKU/DependEX/blob/master/frame/frame.png)
 
 # Dataset
-To be released
+To be released...
 
 # Requirements for Reproducibility
 
