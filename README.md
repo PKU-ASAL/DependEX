@@ -6,7 +6,7 @@ Dependency-aware Form Understanding
 # Dataset
 The raw dataset contains a total of 51,695 samples, each of which involves a UI state and a view hierarchy. After screening and removal of UIs without forms, the remaining samples are selected for analysis. Furthermore, we adopt a combination of automated and manual methods to label relations between form elements, which results in 25,140 annotated element dependency pairs (label-element: 8558, input-action: 5811, others: 10771). Notably, there are a large number of pairs in the others category, where input elements are randomly mapped to incorrect descriptions or actions. This aims to keep a balanced sample  distribution.
 
-UI_Dependency: https://disk.pku.edu.cn:443/link/616DC67DEF24A4DAE8FD83F787270AAF
+**UI_Dependency**: https://disk.pku.edu.cn:443/link/616DC67DEF24A4DAE8FD83F787270AAF
 
 # Requirements for Reproducibility
 
