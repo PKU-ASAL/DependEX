@@ -25,5 +25,18 @@ The raw dataset contains a total of 51,695 samples, each of which involves a UI 
 - scikit-learn == 0.23.2
 - tables == 3.6.1
 
+# Citation
+If you find this repository useful in your research, please cite the following paper:
+```
+@inproceedings{zhang2021dependency,
+  title={Dependency-aware Form Understanding},
+  author={Zhang, Shaokun and Li, Yuanchun and Yan, Weixiang and Guo, Yao and Chen, Xiangqun},
+  booktitle={2021 IEEE 32nd International Symposium on Software Reliability Engineering (ISSRE)},
+  pages={139--149},
+  year={2021},
+  organization={IEEE}
+}
+```
+
 # Contact
 For questions, please feel free to reach out via email at skzhang@pku.edu.cn.
